@@ -1,6 +1,5 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.github.dcendents.android-maven'
-group='com.github.deoreo'
 
 android {
     compileSdkVersion 23
@@ -24,5 +23,28 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.4.0'
-    classpath 'com.github.dcendents:android-maven-gradle-plugin:1.3'
 }
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'modulesplashscreen'
+    orgName = 'deoreo'
+
+    publishedGroupId = 'com.github.deoreo'
+    libraryName = 'modulesplashscreen'
+    artifact = 'modulesplashscreen'
+
+    libraryDescription = 'modulesplashscreen'
+
+    siteUrl = 'https://github.com/deoreo/modulesplashscreen'
+    gitUrl = 'https://github.com/deoreo/modulesplashscreen.git'
+
+    developerId = 'deoreo'
+    developerName = 'Edo Aditya Novendy'
+    developerEmail = 'deoreo06@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
